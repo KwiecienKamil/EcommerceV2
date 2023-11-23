@@ -3,7 +3,7 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 
-const Navbar = ({onOpen}) => {
+const Navbar = ({onOpenModal, onOpenLogin}) => {
   return (
     <div className="h-20 w-full flex justify-center">
       <div className="h-full w-[70%] flex items-center justify-between">
@@ -18,8 +18,8 @@ const Navbar = ({onOpen}) => {
             </a>
         </div>
         <div className="flex text-[25px] gap-4 relative">
-        <button><AiOutlineUser /></button>
-        <button onClick={onOpen}><AiOutlineShoppingCart /></button>
+        <button onClick={onOpenLogin}><AiOutlineUser /></button>
+        <button onClick={onOpenModal}><AiOutlineShoppingCart /></button>
         </div>
       </div>
     </div>
