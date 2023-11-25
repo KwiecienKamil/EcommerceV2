@@ -1,5 +1,5 @@
 import data from '../data/Data'
-import Button from './Button'
+import BlackButton from './BlackButton'
 import {FaShoppingBasket} from 'react-icons/fa'
 
 const ProductItem = () => {
@@ -11,7 +11,7 @@ const ProductItem = () => {
         <h2>{item.name}</h2>
         <div className="w-[250px] flex items-center justify-between text-[18px]">
         <p className='pt-2 font-bold'>{`${item.price}€`}</p>
-        <Button><FaShoppingBasket /></Button>
+        <BlackButton><FaShoppingBasket /></BlackButton>
         </div>
       </div>
     })

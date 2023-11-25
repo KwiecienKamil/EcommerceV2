@@ -1,4 +1,4 @@
-import Button from "./Button"
+import BlackButton from "./BlackButton"
 import {AiOutlineUser} from 'react-icons/ai'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
@@ -8,9 +8,9 @@ const Navbar = ({onOpenModal, onOpenLogin}) => {
     <div className="h-20 w-full flex justify-center">
       <div className="h-full w-[70%] flex items-center justify-between">
         <div className="flex gap-2">
-        <Button>Men</Button>
-        <Button>Woman</Button>
-        <Button>Kids</Button>
+        <BlackButton>Men</BlackButton>
+        <BlackButton>Woman</BlackButton>
+        <BlackButton>Kids</BlackButton>
         </div>
         <div className="h-full flex pr-16 font-logo">
         <a href="/" className="relative h-full flex items-center justify-start">
@@ -18,8 +18,8 @@ const Navbar = ({onOpenModal, onOpenLogin}) => {
             </a>
         </div>
         <div className="flex text-[25px] gap-4 relative">
-        <button onClick={onOpenLogin}><AiOutlineUser /></button>
-        <button onClick={onOpenModal}><AiOutlineShoppingCart /></button>
+        <button onClick={onOpenLogin} className="hover:scale-125 duration-200"><AiOutlineUser /></button>
+        <button onClick={onOpenModal} className="hover:scale-125 duration-200"><AiOutlineShoppingCart /></button>
         </div>
       </div>
     </div>
