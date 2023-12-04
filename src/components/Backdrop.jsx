@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 
-const Backdrop = ({children, onCloseModal}) => {
+const Backdrop = ({children}) => {
     return (
         <Fragment >
           {ReactDOM.createPortal(

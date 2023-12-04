@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         grayish: "#7A8282"
+      },
+      fontFamily: {
+        rubik: 'Rubik',
+        saira: 'Saira Semi Condensed'
       }
     },
   },
